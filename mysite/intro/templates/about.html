@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <h1>About Us</h1>
+
+    <p>
+    We are learning Django web development. This page is styled using external CSS and includes JavaScript functionality.
+    </p>
+
+    <br>
+
+    <a id="back" href="/home">Go back Home</a>
+
+    <script src="{% static 'home.js' %}"></script>
+
+    <footer>
+        <h3>&copy; 2026 All Rights Reserved</h3>
+    </footer>
+</body>
+</html>

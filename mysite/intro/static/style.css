@@ -1,0 +1,60 @@
+nav {
+    background-color: rgb(37, 4, 37);
+    padding: 17px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(37, 4, 37);
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    color: aliceblue;
+}
+
+#back{
+    text-align: center;
+    color: black;
+}
