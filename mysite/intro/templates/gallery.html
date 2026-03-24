@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="/home">Home</a>
+        <a href="/about">About</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/contact">Contact Me</a>
+    </nav>
+
+    <h1>My Image Gallery</h1>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="{% static 'gallery/img1.jpg' %}">
+            <p>Beautiful Nature</p>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'gallery/img2.jpg' %}">
+            <p>Mountain View</p>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'gallery/img3.jpg' %}">
+            <p>City Lights</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

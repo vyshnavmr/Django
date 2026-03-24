@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+    background-color: #f2f2f2;
+}
 nav {
     background-color: rgb(37, 4, 37);
     padding: 17px;
@@ -15,28 +21,22 @@ nav a:hover {
     color: gold;
 }
 
-
-body {
-    font-family: Arial;
-    text-align: center;
-    background-color: #f2f2f2;
-}
-
 h1 {
     color: #333;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+button{
+    padding:12px 25px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+button:hover{
+    background:#0056b3;
 }
 
 a {

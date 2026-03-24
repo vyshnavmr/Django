@@ -1,4 +1,4 @@
 
 function showMessage() {
-    alert("Hello! Button was clicked.");
+    alert("Hello! Welcome to my page!");
 }  
