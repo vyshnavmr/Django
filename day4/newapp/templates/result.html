@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background:white;
+    padding:30px 40px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    width:520px;
+    max-width:90%;
+}
+
+h2{
+    text-align:center;
+    color:#333;
+    margin-bottom:20px;
+}
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #eee;
+    vertical-align:top;
+}
+
+td:first-child{
+    font-weight:bold;
+    color:#444;
+    width:35%;
+    text-transform:capitalize;
+}
+
+td:nth-child(2){
+    width:5%;
+    text-align:center;
+}
+
+td:last-child{
+    color:#222;
+    word-break:break-all;
+    font-size:14px;
+}
+
+tr:first-child td:last-child{
+    font-size:12px;
+    color:#666;
+}
+
+tr:hover{
+    background:#f5f7ff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Hello {{ user }}, your favorite color is: {{ color }}</h2>
+
+<table>
+
+{% for x,y in formData.items %}
+
+<tr>
+    <td>{{ x }}</td>
+    <td>:</td>
+    <td>{{ y }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>
