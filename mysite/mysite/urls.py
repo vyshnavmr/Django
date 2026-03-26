@@ -21,6 +21,7 @@ from emp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     
-    path('emp/', include('emp.urls')),
     path('intro/',include('intro.urls')),
+    path('emp/', include('emp.urls')),
+    path('class/',include('class.urls')),
 ]
