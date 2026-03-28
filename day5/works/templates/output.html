@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background:white;
+    padding:30px 40px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    width:420px;
+}
+
+h2{
+    text-align:center;
+    color:#333;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #eee;
+}
+
+td:first-child{
+    font-weight:bold;
+    width:40%;
+}
+
+</style>
+
+</head>
+
+<body>
+    {% load static%}
+    <div class="container">
+        <u><h2>Thanks for registering, {{ username }}</h2></u>
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>{{ username }}</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>{{ email }}</td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>{{ password }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
