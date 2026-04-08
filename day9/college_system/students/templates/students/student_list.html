@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Students</title>
+</head>
+
+<body>
+
+<h1>Student List</h1>
+
+<h3>{{ message }}</h3>
+
+<ul>
+{% for student in students %}
+    <li>{{ student.name }}</li>
+{% endfor %}
+</ul>
+
+<h3>Add Student</h3>
+
+<form method="post">
+    {% csrf_token %}
+
+    <input type="text" name="name" placeholder="Student name">
+
+    <button type="submit">Add</button>
+</form>
+
+<br>
+
+<a href="/">Home</a>
+
+</body>
+</html>

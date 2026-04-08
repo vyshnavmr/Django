@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teachers</title>
+</head>
+
+<body>
+
+<h1>Teacher List</h1>
+
+<h3>{{ message }}</h3>
+
+<ul>
+{% for teacher in teachers %}
+    <li>{{ teacher.name }}</li>
+{% endfor %}
+</ul>
+
+<h3>Add Teacher</h3>
+
+<form method="post">
+    {% csrf_token %}
+
+    <input type="text" name="name" placeholder="Teacher name">
+
+    <button type="submit">Add</button>
+</form>
+
+<br>
+
+<a href="/">Home</a>
+
+</body>
+</html>
