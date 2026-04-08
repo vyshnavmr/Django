@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+<body>
+
+<h1>Student Result</h1>
+
+{% if student %}
+    <p>Name: {{ student.name }}</p>
+    <p>Marks: {{ student.marks }}</p>
+{% else %}
+    <p>Student not found</p>
+{% endif %}
+
+<a href="/">Back</a>
+
+</body>
+</html>
